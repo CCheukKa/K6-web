@@ -138,6 +138,7 @@ export function InputProvider({ children }: InputProviderProps) {
         const is = (keybind: readonly string[]) => keybind.includes(code);
 
         const substitutableCharacters: Map<string, string> = new Map([
+            [" ", "　"],
             ["`", "・"], ["~", "～"], ["!", "！"], ["@", "＠"],
             ["#", "＃"], ["$", "＄"], ["%", "％"], ["^", "︿"],
             ["&", "＆"], ["*", "＊"], ["(", "（"], [")", "）"],
