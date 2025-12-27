@@ -58,7 +58,7 @@ export default function HomePage() {
 export const getStaticProps: GetStaticProps<AppPageProps> = async () => {
     return {
         props: {
-            title: "中文筆劃輸入法 - Chinese Stroke Input Method",
+            title: "K6 中文筆劃輸入法 - K6 Chinese Stroke Input Method",
         }
     };
 }
