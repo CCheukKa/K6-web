@@ -15,8 +15,9 @@ export class StrokeInputDataCompiler {
             .filter(line => line.startsWith("U+"))
             .map(line => line.trim())
             .map(line => {
-                const [codepoint, annotatedCharacter, strokeRegex] = line.split("\t");
+                const [rawCodepoint, annotatedCharacter, strokeRegex] = line.split("\t");
                 const [character, annotation = ""] = [...annotatedCharacter];
+                const codepoint = rawCodepoint.replace(/!$/, "");
 
                 // check if codepoint matches character
                 const charCodepoint = `U+${character.codePointAt(0)!.toString(16).toUpperCase()}`;
