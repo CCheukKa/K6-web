@@ -10969,7 +10969,7 @@ U+751E	甞^	2434525112211
 U+751F	生	31121
 U+7520	甠	251131121
 U+7521	甡	3112131121
-U+7522	產^	41341331121
+U+7522	產^	41(34|43)1331121
   [Separate code points] U+7523 産
   [Remark] Allow 產 (Kangxi etc.) or 産 (abomination) as a component.
   [產産] 41(34|43)1331121
